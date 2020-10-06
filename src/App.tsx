@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { WORKS } from "./shared/works";
-import HomeComponent from "./components/HomeComponent";
+import MainComponent from "./components/MainComponent";
 
 interface IAppComponentProps {}
 
@@ -19,10 +19,11 @@ export default class AppComponent extends React.Component<IAppComponentProps> {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <HomeComponent />
-      </header>
+        
+      </header> */}
+      <MainComponent />
     </div>
   );
 }

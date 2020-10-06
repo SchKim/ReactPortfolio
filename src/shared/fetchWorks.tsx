@@ -1,5 +1,5 @@
 import { baseUrl } from "./baseUrl";
-import { IWorks } from "./Iworks";
+import { IWorks } from "./IWork";
 
 
 export function fetchWorks() : Promise<IWorks[]> {
