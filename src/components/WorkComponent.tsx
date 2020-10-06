@@ -1,13 +1,19 @@
 import React from "react";
+import { IWorks } from "../shared/Iworks";
 
-interface IWorkComponentProps {}
+interface IWorkComponentProps {
+//   works: IWorks;
+}
 
-export default class WorkComponent extends React.Component<IWorkComponentProps> {
+export default class WorkComponent extends React.Component<
+  IWorkComponentProps
+> {
   render() {
     return (
-     
-        <p>Footer</p>
-      
+      <div>
+        <h1>hier titel</h1>
+        <p>text</p>
+      </div>
     );
   }
 }
