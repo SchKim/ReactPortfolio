@@ -19,24 +19,19 @@ export default class MainComponent extends React.Component<IMainComponentProps, 
     };
   }
 
-  // als het component geladen word voer getData uit
   componentDidMount() {
     this.getData();
   }
 
-  // haal data binnen met fetchproducts en zet het in de this.state
-  // method gemaakt zet products data in getData
   async getData() {
     let data = await fetchWorks();
-    console.log(data)
+    // console.log(data)
     this.setState({ works: data });
   }
 
   render() {
-   // console.log(this.state.works)
     return (
       <div>
-          {/* <WorkComponent></WorkComponent> */}
         <WorkComponent works={this.state.works}/>
         <p>Home</p>
       </div>
