@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import { WORKS } from "./shared/works";
+
 import MainComponent from "./components/MainComponent";
 
 interface IAppComponentProps {}
@@ -10,7 +10,7 @@ export default class AppComponent extends React.Component<IAppComponentProps> {
   constructor(props: IAppComponentProps) {
     super(props);
     this.state = {
-      works: WORKS,
+      //works: WORKS,
     };
   }
 

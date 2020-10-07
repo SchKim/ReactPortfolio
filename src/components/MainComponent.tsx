@@ -28,15 +28,16 @@ export default class MainComponent extends React.Component<IMainComponentProps, 
   // method gemaakt zet products data in getData
   async getData() {
     let data = await fetchWorks();
-
+    console.log(data)
     this.setState({ works: data });
   }
 
   render() {
+   // console.log(this.state.works)
     return (
       <div>
-          <WorkComponent></WorkComponent>
-        {/* <WorkComponent works={this.state.works}/> */}
+          {/* <WorkComponent></WorkComponent> */}
+        <WorkComponent works={this.state.works}/>
         <p>Home</p>
       </div>
     );
