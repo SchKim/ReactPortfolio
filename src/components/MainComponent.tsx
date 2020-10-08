@@ -2,6 +2,7 @@ import React from "react";
 import { IWorks } from "../shared/IWork";
 import { fetchWorks } from "../shared/fetchWorks";
 import WorkComponent from "./WorkComponent";
+import HeaderComponent from "./HeaderComponent";
 
 interface IMainComponentProps {}
 
@@ -32,6 +33,7 @@ export default class MainComponent extends React.Component<IMainComponentProps, 
   render() {
     return (
       <div>
+        <HeaderComponent></HeaderComponent>
         <WorkComponent works={this.state.works}/>
         <p>Home</p>
       </div>
