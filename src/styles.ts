@@ -2,22 +2,26 @@ import styled from "styled-components";
 
 // Header
 
-
 export const EL = styled.div`
   margin: 0 3% 0 0;
+  font-size: calc(10px + 0.5vmin);
 `;
 
 export const El1 = styled.div`
   margin: 0 3% 0 0;
+  font-size: calc(10px + 0.5vmin);
 `;
 export const El2 = styled.div`
   margin: 0 3% 0 0;
+  font-size: calc(10px + 0.5vmin);
 `;
 export const El3 = styled.div`
   margin: 0 3% 0 0;
+  font-size: calc(10px + 0.5vmin);
 `;
 export const El4 = styled.div`
   margin: 0 3% 0 0;
+  font-size: calc(10px + 0.5vmin);
 `;
 
 export const HeaderContainer = styled.div`
@@ -29,6 +33,7 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   height: 100%;
   padding: 4%;
+  
 
   &:hover {
     ${El1} {
@@ -47,22 +52,3 @@ export const HeaderContainer = styled.div`
                   background-color: #fff;
                 }
 `;
-
-// export const HeaderContainerImg = styled.div`
-// max-width: 5px
-
-// `
-
-
-
-// img {
-//     width: 15%;
-//     height: 15%;
-//   margin-left: -13px;
-//   }
-  
-//   @media screen and (min-width: 480px) {
-//       img {
-//         
-//       }
-//   }

@@ -13,7 +13,7 @@ export default class HeaderComponent extends React.Component<
   render() {
     return (
       <HeaderContainer>
-        <EL><img width='30px' src={Logo} alt="logo_kim"/></EL>
+        <EL><img src={Logo} className="header-logo" alt="logo_kim"/></EL>
         <El1>Home</El1>
         <El2>About</El2>
         <El3>Work</El3>
