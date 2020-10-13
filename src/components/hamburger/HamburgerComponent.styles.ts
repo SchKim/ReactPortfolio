@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 
- import { colors } from "../global";
+ import { colors } from "../../global";
 
-const StyledHamburger = styled.button<{ open: boolean }>`
+export const StyledHamburger = styled.button<{ open: boolean }>`
   position: fixed;
   left: 3vw;
   top: 3vw;
@@ -50,22 +49,3 @@ const StyledHamburger = styled.button<{ open: boolean }>`
       }
     }
   `;
-// background-color: ${({ open }) =>
-//       open ? colors.pearl : colors.lightbrown};
-
-type Props = {
-  open: boolean;
-  setOpen: (v: boolean) => void;
-};
-
-const HamburgerComponent = (props: Props) => (
-  <StyledHamburger
-    open={props.open}
-    onClick={() => props.setOpen(!props.open)}
-  >
-    <div />
-    <div />
-    <div />
-  </StyledHamburger>
-);
-export default HamburgerComponent;
